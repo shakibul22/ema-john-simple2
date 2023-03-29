@@ -5,14 +5,18 @@ import './Shop.css';
 
 const Shop = () => {
     const [products, setProducts] = useState([]);
+    const [cart,setCart]=useState([]);
+    console.log(cart);
+
     useEffect(() => {
         fetch('products.json')
         .then(res=>res.json())
         .then(data=>setProducts(data))
     },[]);
-    const [cart,setCart]=useState([]);
     const handleAddToCart=(product)=>{
-        const newCart=[...cart,products];
+        
+        const newCart=[...cart,product];
+        console.log(newCart);
         setCart(newCart);
         
     }
