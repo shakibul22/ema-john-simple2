@@ -1,3 +1,4 @@
+
 .header{
     height: 80px;
     background-color: #1C2B35;
@@ -6,6 +7,7 @@
     align-items: center;
     padding-left: 100px;
     padding-right: 100px;
+    border: 2px solid rgb(255, 106, 0);
     
    
 }
@@ -16,5 +18,17 @@ div .header a{
    
 }
 div .header a:hover{
-    color: coral;
+    color: coral !important;
+}
+   
+
+@media screen and (max-width: 668px) {
+    .header {
+      flex-direction: column;
+      align-items: center;
+      margin: 0;
+      width: 100%;
+    }
+    
+       
 }

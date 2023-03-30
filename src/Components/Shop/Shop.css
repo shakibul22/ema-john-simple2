@@ -1,11 +1,26 @@
+
 .shop-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    border: 2px solid magenta;
+    border: 2px solid rgb(0, 255, 162);
 }
 
 .products-container {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 5px;
-}
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+} 
+  @media screen and (max-width: 668px) {
+          .shop-container {
+              display: grid;
+              grid-template-columns: repeat(2, 1fr);
+              border: 2px solid rgb(0, 255, 162);
+          }
+          
+          .products-container {
+              display: grid;
+              grid-template-columns: repeat(1, 1fr);
+            
+              
+          }
+    }
